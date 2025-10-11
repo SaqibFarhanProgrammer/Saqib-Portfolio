@@ -65,6 +65,10 @@ body {
   transition: color 0.5s ease;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .about-button::before {
   content: "";
   position: absolute;
