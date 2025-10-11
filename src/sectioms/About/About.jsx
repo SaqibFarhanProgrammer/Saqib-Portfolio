@@ -38,9 +38,9 @@ export default function About() {
       flex flex-col justify-center items-center gap-8 sm:gap-10"
     >
       <p
-        className="about-para z-10 px-4  md:px-12 text-center py-10 sm:py-16 md:py-20 
+        className="about-para z-10  md:px-12 text-center py-10 sm:py-16 md:py-20 
         text-[4.5vw] sm:text-[13vw] md:text-[1.6vw]  lg:text-[2.3vw] w-[100%]
-        leading-[7vw] sm:leading-[5vw] md:leading-[3.2vw]"
+        leading-[7vw] sm:leading-[5vw] md:leading-[3.2vw] max-[531px]:text-[6vw]"
       >
         <span className="span font-['italic']">Frontend Developer</span> with{" "}
         <span className="span font-['italic']">hands on experience</span> in
