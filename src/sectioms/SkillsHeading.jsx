@@ -29,14 +29,14 @@ export default function SkillsHeading() {
   return (
     <div
       ref={containerRef}
-      className="w-full relative h-[25vh] sm:h-[30vh] md:h-[40vh] px-4 sm:px-10 grid-bg overflow-hidden flex items-center"
+      className="w-full relative h-[25vh] z-20 sm:h-[30vh] md:h-[40vh] px-4 sm:px-10 overflow-hidden flex items-center"
     >
       <div
         ref={stripRef}
         className="skills-strip absolute left-0 top-1/2 -translate-y-1/2 flex gap-10 sm:gap-16 md:gap-20 w-[250%] sm:w-[400%] md:w-[500%]"
         style={{ willChange: "transform" }}
       >
-        {Array.from({ length: 8 }).map((_, i) => (
+        {Array.from({ length: 10   }).map((_, i) => (
           <h1
             key={i}
             className="uppercase font-['HB'] text-[14vw] sm:text-[10vw] md:text-[8vw] text-white whitespace-nowrap"

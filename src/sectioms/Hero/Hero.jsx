@@ -9,10 +9,10 @@ const Hero = () => {
   const { setisnabarisopen } = useContext(Context);
 
   return (
-    <div className="hero-container relative w-full max-[531px]:h-[100vh] h-screen flex flex-col justify-between overflow-x-hidden bg-transparent">
+    <div className="hero-container z-20 relative w-full max-[531px]:h-[100vh] h-screen flex flex-col justify-between overflow-x-hidden bg-transparent">
       {/* ---------- Navbar ---------- */}
-      <div className="top-navbar z-10 flex justify-between items-center px-4 py-3 sm:px-8 md:px-10">
-        <div>
+      <div className="top-navbar z-10 flex justify-between items-center px-1 py-3 sm:px-8 md:px-3">
+        <div className="">
           <img
             className="logo-img-1 h-[6vh] w-auto sm:h-[7vh] md:h-[8vh] mix-blend-screen"
             src={logo}

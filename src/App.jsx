@@ -18,6 +18,9 @@ const App = () => {
         src={gridbg}
         alt=""
       />
+      <div className="fixed-section fixed h-screen  top-0 left-0 w-full bg-transparent grid-bg z-10">
+
+      </div>
       <LenisApp>
         <Hero />
         <About />
