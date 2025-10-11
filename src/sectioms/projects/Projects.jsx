@@ -1,57 +1,62 @@
-import React from 'react';
+// Projects.jsx
+import React from "react";
+import ProjectCard from "./ProjectCard";
+import image1 from "../../assets/ProjectsImages/Cerad - Macbook Pro Modern Mockups.jpg";
+import image2 from "../../assets/ProjectsImages/Floating iPhone 15 Pro Mockup – Premium Dark Edition.jpg";
+import image3 from "../../assets/ProjectsImages/Laptop Macbook Aesthetic Mockup.jpg";
+
+// 🧩 React Icons imports
+import { FaReact } from "react-icons/fa";
+import { SiFirebase, SiTailwindcss, SiShadcnui } from "react-icons/si";
 
 // Example projects data
 const projects = [
   {
     title: "Elixur Jewelry Store",
     description: "E-commerce website for luxury jewelry.",
-    img: "https://i.pinimg.com/564x/xx/xx/xx/xx.jpg", // Replace with Pinterest laptop mockup
+    img: image1,
     link: "#",
+    technologies: {
+      react: <FaReact className="text-cyan-400 text-3xl" />,
+      firebase: <SiFirebase className="text-orange-500 text-3xl" />,
+      tailwind: <SiTailwindcss className="text-sky-400 text-3xl" />,
+      shadcn: <SiShadcnui className="text-purple-400 text-3xl" />,
+    },
   },
   {
     title: "Portfolio Website",
     description: "Modern minimal portfolio website for a designer.",
-    img: "https://i.pinimg.com/564x/yy/yy/yy/yy.jpg",
+    img: image2,
     link: "#",
   },
   {
     title: "Marketing Landing Page",
     description: "Responsive landing page for a digital campaign.",
-    img: "https://i.pinimg.com/564x/zz/zz/zz/zz.jpg",
+    img: image3,
     link: "#",
   },
 ];
 
 const Projects = () => {
   return (
-    <div className=' z-20 relative text-white min-h-screen font-sans py-20'>
-      <div className="container mx-auto px-6">
+    <div className="z-20 relative text-white h-screen bg-blue-950 font-sans py-0">
+      <div className="container w-full h-[10%] mx-auto px-6 bg-green-900">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          My Projects
+          Work
         </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {projects.map((project, index) => (
-            <a
-              key={index}
-              href={project.link}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
-            >
-              {/* Laptop Mockup */}
-              <div className="w-full h-[220px] md:h-[250px] lg:h-[280px] relative">
-                <img
-                  src={project.img}
-                  alt={project.title}
-                  className="w-full h-full object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p className="text-sm text-gray-300 mt-1">{project.description}</p>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
+      <div className="bottom w-full bg-red-950 h-[90%] flex justify-between items-end p-4">
+        <ProjectCard
+          title={projects[0].title}
+          description={projects[0].description}
+          prevLink="#"
+          githubLink="#"
+          height="76vh"
+          image={projects[0].img}
+          width="50vw"
+          technologies={projects[0].technologies}
+        />
       </div>
     </div>
   );

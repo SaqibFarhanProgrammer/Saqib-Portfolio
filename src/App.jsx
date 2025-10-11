@@ -8,6 +8,8 @@ import About from "./sectioms/About/About";
 import LenisApp from "./LenisProvider";
 import Services from "./sectioms/Services/Services";
 import Skills from "./sectioms/Skills/Skills";
+import 'remixicon/fonts/remixicon.css';
+
 import SkillsHeading from "./sectioms/SkillsHeading";
 import Experience from "./sectioms/expereince/Experience";
 const App = () => {
