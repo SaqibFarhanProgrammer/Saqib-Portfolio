@@ -39,7 +39,7 @@ export default function About() {
     >
       <p
         className="about-para z-10 px-4 sm:px-2 md:px-12 text-center py-10 sm:py-16 md:py-20 
-        text-[4.5vw] sm:text-[8vw] md:text-[1.6vw] lg:text-[2.3vw] 
+        text-[4.5vw] sm:text-[12vw] md:text-[1.6vw] lg:text-[2.3vw] 
         leading-[7vw] sm:leading-[5vw] md:leading-[3.2vw]"
       >
         <span className="span font-['italic']">Frontend Developer</span> with{" "}
