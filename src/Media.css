@@ -1,0 +1,40 @@
+@media (max-width: 1189px) {
+
+.linkedin{
+  width: 17vw;
+  
+}
+
+}
+
+@media (max-width: 980px) {
+
+.linkedin{
+  width: 22vw;
+  height: 8vh;
+  
+}
+ 
+.linkedin .linkedin-icon{
+font-size: 3vw;
+}
+
+.linkedin p{
+   padding-right: 4vw;
+}
+
+.hero-para{
+
+}
+
+.text-hero{
+  bottom: 14vw;
+  display: none;
+}
+
+.main-cerousel{
+  bottom: vw;
+}
+
+}
+

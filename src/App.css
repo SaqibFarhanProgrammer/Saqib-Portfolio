@@ -1,0 +1,127 @@
+
+@font-face {
+  src: url(./assets/fonts/yDtI2UI8XcEg1W2je9XPN3Noo.woff2);
+  font-family: "font11";
+}
+
+@font-face {
+  src: url(./assets/fonts/helvaticaBold.woff2);
+  font-family: "HB";
+}
+@font-face {
+  src: url(./assets/fonts//medium.ttf);
+  font-family: "medium";
+}
+
+@font-face {
+  src: url(./assets/fonts/Main.otf);
+  font-family: "main";
+}
+@font-face {
+  src: url(./assets/fonts/italic.ttf);
+  font-family: "italic";
+}
+
+
+
+body {
+  color: white;
+}
+
+
+
+
+.navbar-links {
+  font-family: "HB";
+  position: relative;
+  text-transform: uppercase;
+
+}
+
+.navbar-links:hover {
+  color: rgb(121, 121, 121);
+}
+
+.navbar {
+  filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 250px rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 450px rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 50px rgb(0, 0, 0));
+}
+
+
+.hero-para {
+  font-family: "main";
+  letter-spacing: 0.1vw;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.hero-container {
+}
+
+.about-para {
+  font-family: "main";
+}
+.about-button {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: black; /* default text color */
+  transition: color 0.5s ease;
+}
+
+.about-button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -100%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: black;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.about-button:hover {
+  color: white; /* text white on hover */
+}
+
+.about-button:hover::before {
+  bottom: 0;
+  width: 100%;
+}
+
+.hero-text-h1 {
+  font-family: "HB";
+  line-height: 5.4vw;
+}
+
+
+.cursor-about{
+  transition: linear .3s;
+}
+
+.grid-bg {
+  background-color: #000000;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0 1px,
+      transparent 1px 8px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.199) 0 1px,
+      transparent 1px 8px
+    );
+  background-size: 50px 40px, 20px 50px;
+}
+  
+
+.para{
+  transition:  .5s;
+
+}
