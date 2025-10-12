@@ -44,19 +44,19 @@ const basicKnowledge = [
 
 export default function Skills() {
   return (
-    <section className="min-h-screen w-full z-20  px-6 py-10 sm:px-8 md:px-12 md:py-16 text-white">
-      <div className="max-w-6xl z-20 mx-auto flex flex-col md:flex-row gap-10 md:gap-12">
+    <section className="min-h-screen w-full z-10  px-6 py-10 sm:px-8 md:px-12 md:py-16 text-white">
+      <div className="max-w-6xl z-10 mx-auto flex flex-col md:flex-row gap-10 md:gap-12">
         {/* Left Side Heading */}
-        <div className="md:w-1/2 z-20 flex items-start justify-center md:justify-start">
+        <div className="md:w-1/2 z-10 flex items-start justify-center md:justify-start">
           <div className="w-full md:sticky md:top-24 text-center md:text-left">
             <h1 className="text-[12vw] sm:text-[8vw] md:text-[5vw] font-['HB'] uppercase leading-none">
-              Skills
+              Hands On
             </h1>
           </div>
         </div>
 
         {/* Right Side Content */}
-        <div className="md:w-1/2 flex flex-col z-20 gap-8">
+        <div className="md:w-1/2 flex flex-col z-10 gap-8">
           {/* Core Skills */}
           <div>
             <h2 className="text-[5vw] sm:text-[3vw] md:text-[1.5vw] font-semibold mb-4">

@@ -43,7 +43,7 @@ const Services = () => {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <div className="w-full z-20  flex flex-col px-4 py-8 sm:px-8 md:px-12 sm:py-12">
+    <div className="w-full z-10  flex flex-col px-4 py-8 sm:px-8 md:px-12 sm:py-12">
       {/* Heading */}
       <div className="top w-full z-20 text-center sm:text-left mb-8 sm:mb-12">
         <h1 className="text-[12vw] sm:text-[8vw] md:text-[5vw] font-[HB] uppercase">
@@ -52,7 +52,7 @@ const Services = () => {
       </div>
 
       {/* Layout */}
-      <div className="flex z-20 flex-col md:flex-row justify-between gap-8 sm:gap-10">
+      <div className="flex z-10 flex-col md:flex-row justify-between gap-8 sm:gap-10">
         {/* Left Side Text */}
         <p className="md:w-[45%] w-full text-center md:text-left text-sm sm:text-base leading-relaxed text-gray-300">
           I focus on creating meaningful digital experiences that combine clean

@@ -37,7 +37,7 @@ export default function SkillsHeading() {
         style={{ willChange: "transform" }}
       >
         {Array.from({ length: 10   }).map((_, i) => (
-          <h1
+          <h1 
             key={i}
             className="uppercase font-['HB'] text-[14vw] sm:text-[10vw] md:text-[8vw] text-white whitespace-nowrap"
           >

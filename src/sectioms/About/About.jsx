@@ -33,9 +33,9 @@ export default function About() {
   return (
     <sections
       ref={root}
-      className="relative w-full min-h-screen px-6 sm:px-10 md:px-16 lg:px-24 
+      className="relative w-full h-[75vh] px-6 sm:px-10 md:px-16 lg:px-24 
       py-12 sm:py-20 md:py-24 bg-transparent grid-bg overflow-hidden text-white 
-      flex flex-col justify-center items-center gap-8 sm:gap-10"
+      flex  justify-center items-center gap-8 sm:gap-10"
     >
       <p
         className="about-para z-10  md:px-12 text-center py-10 sm:py-16 md:py-20 
@@ -58,13 +58,7 @@ export default function About() {
         <span className="span font-['italic']">user experience.</span>
       </p>
 
-      <div className="about-cta z-10 mt-4 sm:mt-8 md:mt-10 flex justify-center">
-        <Button
-          label="Contact Me"
-          className="px-8 py-3 sm:px-10 sm:py-4 text-[4vw] sm:text-[2vw] md:text-[1.2vw] 
-          rounded-full font-semibold transition-all duration-300 bg-white text-black hover:bg-gray-200"
-        />
-      </div>
+  
     </sections>
   );
 }

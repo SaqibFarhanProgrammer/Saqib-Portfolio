@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
 
         <div
-          className="menu-button cursor-pointer flex items-center justify-center rounded-full fixed top-3 right-4 sm:right-6"
+          className="menu-button cursor-pointer  z-50ser flex items-center justify-center rounded-full fixed top-3 right-4 sm:right-6"
           onClick={() => setisnabarisopen(true)}
         >
           <HiOutlineMenuAlt4 className="menu-icon text-[7vw] sm:text-[4vw] md:text-[2vw]" />

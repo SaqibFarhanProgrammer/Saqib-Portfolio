@@ -47,25 +47,27 @@ const Projects = () => {
   const project = projects[0];
 
   return (
-    <div className="z-20 relative text-white font-sans py-1">
+    <div className="z-10 relative text-white font-sans py-1">
       <div className="container mx-auto mb-12">
         <h2 className="text-6xl sm:text-8xl md:text-9xl font-['HB'] uppercase font-bold text-center tracking-tight leading-tight">
           Work
         </h2>
-      </div>
+      </div>  
 
-      <div className="w-[100%] h-auto  overflow-x-hiddenflex flex-col md:flex-row items-center md:items-end justify-center p-3 sm:p-5 gap-6 md:gap-4">
+    
+      <div className="w-[100%] h-auto flex overflow-x-hidden flex-col  items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
         <ProjectCard
-          title="Portfolio Website"
-          description="Minimal and modern portfolio website showcasing creative work with smooth transitions and clean layout."
-          img={image2}
+          title="Marketing Landing Page"
+          description="High-conversion responsive landing page designed for digital campaigns with engaging visuals and CTA focus."
+          img={image3}
           link="#"
           technologies={{
             react: <FaReact className="text-cyan-400 text-lg sm:text-xl md:text-3xl" />,
+            firebase: <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />,
             tailwind: <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />,
           }}
-          height="50vh"
-          width="45vw"
+          height="80vh"
+          width="85vw"
         />
         <ProjectCard
           title="Marketing Landing Page"
@@ -77,12 +79,11 @@ const Projects = () => {
             firebase: <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />,
             tailwind: <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />,
           }}
-          height="60vh"
-          width="65vw"
+          height="80vh"
+          width="85vw"
         />
       </div>
-
-      <div className="w-[100%] h-auto flex overflow-x-hidden flex-col md:flex-row items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
+      <div className="w-[100%] h-auto flex overflow-x-hidden flex-col  items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
         <ProjectCard
           title="Marketing Landing Page"
           description="High-conversion responsive landing page designed for digital campaigns with engaging visuals and CTA focus."
@@ -93,31 +94,25 @@ const Projects = () => {
             firebase: <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />,
             tailwind: <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />,
           }}
-          height="60vh"
-          width="65vw"
+          height="80vh"
+          width="85vw"
+        />
+        <ProjectCard
+          title="Marketing Landing Page"
+          description="High-conversion responsive landing page designed for digital campaigns with engaging visuals and CTA focus."
+          img={image3}
+          link="#"
+          technologies={{
+            react: <FaReact className="text-cyan-400 text-lg sm:text-xl md:text-3xl" />,
+            firebase: <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />,
+            tailwind: <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />,
+          }}
+          height="80vh"
+          width="85vw"
         />
       </div>
 
-      <style jsx>{`
-        @media (max-width: 531px) {
 
-          h2 {
-            font-size: 2.8rem !important;
-          }
-          .flex {
-            flex-direction: column !important;
-          }
-          .w-full > div {
-            width: 90vw !important;
-            height: auto !important;
-          }
-          .gap-6 {
-            gap: 1.2rem !important;
-          }
-          .p-3 {
-          }
-        }
-      `}</style>
     </div>
   );
 };
