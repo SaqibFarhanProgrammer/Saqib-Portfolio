@@ -1,43 +1,21 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import openIcon from "../assets/icons/imgi_138_default.png";
 import { Context } from "../context/context";
-import gsap from "gsap";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
 
-  // Set initial position only once
-  useEffect(() => {
-    gsap.set(".navbar", { right: "-100%" });
-  }, []);
-
-  // Animate on state change
-  useEffect(() => {
-    if (isnabarisopen) {
-      gsap.to(".navbar", {
-        right: "-1%",
-        duration: 0.9,
-        ease: "slow(0.7,0.7,false)",
-      });
-    } else {
-      gsap.to(".navbar", {
-        right: "-100%",
-        duration: 0.7,
-        ease: "power3.in",
-      });
-    }
-  }, [isnabarisopen]);
-
   return (
     <div
-      className="
-        navbar fixed z-50 rounded-[20px] top-0 backdrop-blur-2xl h-[100%] w-[30%]
+      className={`
+        fixed z-50 rounded-[20px] top-0 backdrop-blur-2xl h-[100%] w-[30%] transition-all duration-500
+        ${isnabarisopen ? "right-0" : "-right-full"}
         max-[1024px]:w-[45%] 
         max-[531px]:w-[75%] 
         max-[531px]:rounded-none
-      "
+      `}
     >
       <img
         onClick={() => setisnabarisopen(!isnabarisopen)}
@@ -57,19 +35,19 @@ const Navbar = () => {
           max-[531px]:text-[26px] max-[531px]:p-6 max-[531px]:pt-[28vw]
         "
       >
-        <button className="navbar-links  leading-[4vw] max-[531px]:leading-[10vw]  vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw] ">
+        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Home
         </button>
-        <button className="navbar-links  leading-[4vw] max-[531px]:leading-[10vw]  vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw] ">
+        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Work
         </button>
-        <button className="navbar-links  leading-[4vw] max-[531px]:leading-[10vw]  vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw] ">
+        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Services
         </button>
-        <button className="navbar-links  leading-[4vw] max-[531px]:leading-[10vw]  vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw] ">
+        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Contact
         </button>
-        <button className="navbar-links  leading-[4vw] max-[531px]:leading-[10vw]  vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw] ">
+        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           About
         </button>
       </div>

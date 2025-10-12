@@ -53,7 +53,7 @@ const Projects = () => {
           Work
         </h2>
       </div>  
-
+    
     
       <div className="w-[100%] h-auto flex overflow-x-hidden flex-col  items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
         <ProjectCard
