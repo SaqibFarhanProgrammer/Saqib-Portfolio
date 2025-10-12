@@ -4,10 +4,8 @@ const experiences = [
   {
     company: "Cora IDE",
     tagline: "Web-based code editor",
-    role: "Frontend Developer",
-    location: "Remote",
-    industry: "Developer Tools",
-    website: "github.com/yourusername/cora-ide",
+    techStack: "React, Firebase, Tailwind CSS ShadCN",
+    github: "github.com/yourusername/cora-ide",
     description: `I built a browser-based code editor that supports HTML, CSS, and JavaScript rendering. 
     It includes a file system, Google authentication, and code saving functionality. 
     Users can create, edit, and download their code files directly from the app, 
@@ -16,20 +14,16 @@ const experiences = [
   {
     company: "Neura AI",
     tagline: "AI-powered chat application",
-    role: "Frontend Developer",
-    location: "Remote",
-    industry: "Artificial Intelligence",
-    website: "github.com/yourusername/neura-ai",
+    techStack: "React, Gemini API, Tailwind CSS",
+    github: "github.com/yourusername/neura-ai",
     description: `I created an AI chat application using the Gemini API that allows users to chat directly with an AI assistant. 
     The app focuses on generating optimized and context-aware responses within a clean and responsive interface.`,
   },
   {
     company: "Crypto Dashboard",
     tagline: "Real-time cryptocurrency tracker",
-    role: "Frontend Developer",
-    location: "Remote",
-    industry: "Finance and Technology",
-    website: "github.com/yourusername/crypto-dashboard",
+    techStack: "React, CoinGecko API, Chart.js",
+    github: "github.com/yourusername/crypto-dashboard",
     description: `I developed a crypto dashboard that shows real-time cryptocurrency prices, market data, 
     and includes a built-in currency converter. This project helped me improve my skills 
     in API integration and building responsive, data-driven interfaces.`,
@@ -37,10 +31,8 @@ const experiences = [
   {
     company: "Quick Notes",
     tagline: "Minimal note-taking app",
-    role: "Frontend Developer",
-    location: "Remote",
-    industry: "Productivity Tools",
-    website: "github.com/yourusername/quick-notes",
+    techStack: "React, LocalStorage API, Tailwind CSS",
+    github: "github.com/yourusername/quick-notes",
     description: `I designed and built a simple note-taking application with a minimal UI, 
     featuring light and dark themes and local storage integration. 
     It provides a fast, distraction-free experience for managing notes.`,
@@ -51,7 +43,7 @@ const Experience = () => {
   return (
     <section className="w-full min-h-screen z-20 relative bg-transparent text-white px-4 sm:px-6 lg:px-20 py-12">
       <div className="w-full h-auto flex justify-center items-center">
-        <h2 className="text-5xl w-[100%] text-center sm:text-4xl pl-18 md:text-[4vw] font-bold mb-12  sm:text-left max-[531px]:pl-0">
+        <h2 className="text-5xl w-[100%] text-center sm:text-4xl pl-18 md:text-[4vw] font-bold mb-12 sm:text-left max-[531px]:pl-0">
           EXPERIENCE
         </h2>
       </div>
@@ -62,6 +54,7 @@ const Experience = () => {
             key={idx}
             className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start"
           >
+            {/* Company Info */}
             <div className="md:col-span-3">
               <h3 className="text-xl sm:text-2xl font-semibold">
                 {exp.company}
@@ -71,28 +64,25 @@ const Experience = () => {
               </p>
             </div>
 
+            {/* Project Details */}
             <div className="md:col-span-3 space-y-1 text-white/80 text-sm sm:text-base">
               <p>
-                <span className="font-semibold">Position:</span> {exp.role}
+                <span className="font-semibold">Tech Stack:</span> {exp.techStack}
               </p>
               <p>
-                <span className="font-semibold">Location:</span> {exp.location}
-              </p>
-              <p>
-                <span className="font-semibold">Industry:</span> {exp.industry}
-              </p>
-              <p>
-                <span className="font-semibold">Website:</span>{" "}
+                <span className="font-semibold">GitHub:</span>{" "}
                 <a
-                  href={`https://${exp.website}`}
+                  href={`https://${exp.github}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="underline"
                 >
-                  {exp.website}
+                  {exp.github}
                 </a>
               </p>
             </div>
 
+            {/* Description */}
             <div className="md:col-span-6 text-white/70 leading-relaxed text-sm sm:text-base">
               {exp.description}
             </div>
