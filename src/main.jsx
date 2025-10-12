@@ -4,14 +4,13 @@ import "./index.css";
 import App from "./App.jsx";
 import Navbar from "./Mycomponents/Navbar";
 import { Provider } from "./context/context";
-import LenisProvideer from "./LenisProvider"
+import LenisProvideer from "./LenisProvider";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider>
       <Navbar />
 
-      
       <App />
     </Provider>
   </StrictMode>
