@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-[#0a0a0a] to-black text-white px-4 z-10 relative">
+    <div className="min-h-screen flex items-center justify-center  text-white px-4 z-10 relative">
       <div
         className="
           w-full max-w-3xl rounded-xl shadow-2xl backdrop-blur-2xl

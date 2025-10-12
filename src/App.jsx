@@ -13,6 +13,7 @@ import 'remixicon/fonts/remixicon.css';
 import SkillsHeading from "./sectioms/SkillsHeading";
 import Experience from "./sectioms/expereince/Experience";
 import ContactForm from "./sectioms/contact/Contact";
+import Footer from "./sectioms/footer/Footer";
 const App = () => {
   return (
     <div data-scroll-container className=" h-screen  relative ">
@@ -33,6 +34,7 @@ const App = () => {
         <Skills/>
         <Experience/>
         <ContactForm/>
+        <Footer/>
       </LenisApp>
     </div>
   );
