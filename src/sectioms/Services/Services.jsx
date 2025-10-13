@@ -9,7 +9,7 @@ const services = [
     id: 1,
     title: "Frontend Development",
     // Yeh Pinterest image URL hai (placeholder) — tu apna correct URL yahan daal
-    image: "https://i.pinimg.com/originals/xx/yy/zz/your-pinterest-image.jpg",
+    image: "https://cdn.dribbble.com/userupload/13628136/file/original-1749e1fb283c1f4a540c60694d2c5f99.png?resize=1600x1200&vertical=center",
     points: [
       "Responsive, mobile-first interfaces",
       "Component-driven architecture (React)",
@@ -19,7 +19,7 @@ const services = [
   {
     id: 2,
     title: "UI Design",
-    image: "https://images.pexels.com/photos/3182786/pexels-photo-3182786.jpeg",
+    image: "https://cdn.dribbble.com/userupload/44168173/file/original-1c449ae9eb19fd5dc54e2f218b206c9e.png?resize=1600x1067&vertical=center",
     points: [
       "Design systems and reusable components",
       "Pixel-perfect layouts and spacing",
@@ -30,7 +30,7 @@ const services = [
     id: 3,
     title: "UI UX Design",
 
-    image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
+    image: "https://cdn.dribbble.com/userupload/44079546/file/original-0376cd638a8e13fa4af002977dc8d3a1.png?resize=1200x957&vertical=center",
     points: [
       "User-centered wireframes and journey mapping",
       "Visual hierarchy and interaction flow",

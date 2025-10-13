@@ -20,7 +20,7 @@ const Contact = () => {
       <div
         className="
           w-full max-w-3xl rounded-xl shadow-2xl backdrop-blur-2xl
-          bg-gradient-to-b from-[#f5f5f5]/80 to-[#4338ca]/60 
+          bg-gradient-to-b from-[#f5f5f5]/80 to-[#fff]/90 
           p-10 z-10 relative
           h-auto xs:h-[90vh]
         "
@@ -87,7 +87,7 @@ const Contact = () => {
           {/* Button */}
           <button
             type="submit"
-            className="absolute -right-8 bottom-5 bg-black text-white p-4 rounded-full hover:bg-zinc-800 transition-all duration-300 z-10"
+            className="absolute -right-1 bottom-0 bg-black text-white p-4 rounded-full hover:bg-zinc-800 transition-all duration-300 z-10"
           >
             <FiArrowUpRight className="text-2xl" />
           </button>
