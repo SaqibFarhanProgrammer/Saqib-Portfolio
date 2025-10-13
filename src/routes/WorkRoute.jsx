@@ -6,7 +6,13 @@ const projects = [
     title: "Cora IDE",
     subtitle: "Web-based Code Editor",
     description:
-      "A browser-based code editor that supports HTML, CSS, and JavaScript rendering. Includes file system, Google authentication, and code saving functionality for developers.",
+      "A powerful in-browser IDE that supports live HTML, CSS, and JavaScript previewing. Includes Google Auth, file system integration, and autosave to enhance developer workflow.",
+    features: [
+      "Live code rendering",
+      "Integrated Google Authentication",
+      "Cloud-based file system",
+      "Dark & light theme support",
+    ],
     img: "https://cdn.dribbble.com/userupload/43531597/file/still-21f3b392795691c0e4a20bf6bdd722b6.png?format=webp&resize=1200x900",
     tech: [
       "ri-reactjs-line text-cyan-400",
@@ -19,7 +25,13 @@ const projects = [
     title: "Neura AI",
     subtitle: "AI-powered Chat Application",
     description:
-      "An AI chat app using the Gemini API for real-time intelligent conversations in a sleek, responsive design.",
+      "A futuristic chat application using the Gemini API for intelligent, real-time conversations. Built with a focus on speed, accessibility, and design simplicity.",
+    features: [
+      "Real-time AI chat engine",
+      "Responsive modern UI",
+      "Gemini API integration",
+      "Message memory system",
+    ],
     img: "https://cdn.dribbble.com/userupload/44206437/file/ecc0b2123d2c73d5f2fce314bcd5abc6.jpg?format=webp&resize=1200x900",
     tech: [
       "ri-reactjs-line text-cyan-400",
@@ -32,7 +44,13 @@ const projects = [
     title: "Crypto Dashboard",
     subtitle: "Real-time Cryptocurrency Tracker",
     description:
-      "A sleek dashboard displaying live crypto data, market trends, and a currency converter built using modern APIs.",
+      "A sleek and responsive crypto tracking platform that visualizes live prices, charts, and market trends using APIs. Designed with a focus on UI/UX minimalism.",
+    features: [
+      "Live market updates",
+      "Portfolio performance tracking",
+      "Exchange rate converter",
+      "Interactive graph analytics",
+    ],
     img: "https://cdn.dribbble.com/userupload/43513183/file/original-5f043b10f20a4c046d928335de60fffd.png?format=webp&resize=1200x900",
     tech: [
       "ri-reactjs-line text-cyan-400",
@@ -41,22 +59,23 @@ const projects = [
     ],
     github: "https://github.com/yourusername/crypto-dashboard",
   },
-
 ];
 
 const WorkRoute = () => {
   return (
     <section className="w-full relative z-[101] min-h-screen bg-black text-white py-24 px-6 md:px-20">
+      {/* Header */}
       <div className="text-center mb-20">
         <h1 className="text-[10vw] sm:text-[6vw] md:text-[4vw] font-[HB] uppercase tracking-tight">
           Work
         </h1>
         <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mt-3">
-          A showcase of my latest creative and technical projects — blending
-          design precision, usability, and performance.
+          A showcase of my latest creative and technical projects — combining
+          precision design, smooth performance, and next-gen user experience.
         </p>
       </div>
 
+      {/* Projects */}
       <div className="flex flex-col gap-28">
         {projects.map((project, index) => (
           <div
@@ -65,15 +84,18 @@ const WorkRoute = () => {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="md:w-1/2 w-full overflow-hidden rounded-3xl relative group shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+            {/* Image */}
+            <div className="md:w-1/2 w-full overflow-hidden rounded-3xl relative group shadow-[0_0_25px_rgba(255,255,255,0.05)]">
               <img
                 src={project.img}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/5 blur-3xl"></div>
             </div>
 
+            {/* Details */}
             <div className="md:w-1/2 w-full space-y-5">
               <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
                 {project.title}
@@ -83,7 +105,13 @@ const WorkRoute = () => {
                 {project.description}
               </p>
 
-              <div className="flex items-center gap-4">
+              <ul className="text-gray-400 text-sm list-disc list-inside space-y-1">
+                {project.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+
+              <div className="flex items-center gap-4 pt-3">
                 {project.tech.map((icon, i) => (
                   <i key={i} className={`${icon} text-2xl sm:text-3xl`}></i>
                 ))}
