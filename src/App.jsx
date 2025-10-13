@@ -6,6 +6,7 @@ import "remixicon/fonts/remixicon.css";
 import { Routes, Route } from "react-router-dom";
 import { Context } from "./context/context";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import WorkRoute from "./routes/WorkRoute";
 
 const Hero = lazy(() => import("./sectioms/Hero/Hero"));
 const Projects = lazy(() => import("./sectioms/projects/Projects"));
@@ -56,6 +57,7 @@ s
               }
             />
             <Route path="/services" element={<ServiceRoute />} />
+            <Route path="/work" element={<WorkRoute />} />
           </Routes>
         </Suspense>
       </LenisApp>
