@@ -5,13 +5,16 @@ import App from "./App.jsx";
 import Navbar from "./Mycomponents/Navbar";
 import { Provider } from "./context/context";
 import LenisProvideer from "./LenisProvider";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider>
-      <Navbar />
-
-      <App />
+      <BrowserRouter>
+      
+        <Navbar />
+        <App />
+      </BrowserRouter>
     </Provider>
   </StrictMode>
 );

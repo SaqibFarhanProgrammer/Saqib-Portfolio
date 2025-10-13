@@ -3,6 +3,7 @@ import openIcon from "../assets/icons/imgi_138_default.png";
 import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
@@ -35,21 +36,21 @@ const Navbar = () => {
           max-[531px]:text-[26px] max-[531px]:p-6 max-[531px]:pt-[28vw]
         "
       >
-        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Home
-        </button>
-        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        </Link>
+        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Work
-        </button>
-        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        </Link>
+        <Link to="/Services" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Services
-        </button>
-        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        </Link>
+        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Contact
-        </button>
-        <button className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        </Link>
+        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           About
-        </button>
+        </Link>
       </div>
 
       <div

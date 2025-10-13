@@ -1,40 +1,63 @@
-import React from "react";
+import React, { Suspense, lazy, useContext } from "react";
 import "./App.css";
 import "./Media.css";
-import Hero from "./sectioms/Hero/Hero";
-import Projects from "./sectioms/projects/Projects";
-import gridbg from ".//assets/images/sims 4 cc.jfif";
-import About from "./sectioms/About/About";
 import LenisApp from "./LenisProvider";
-import Services from "./sectioms/Services/Services";
-import Skills from "./sectioms/Skills/Skills";
-import 'remixicon/fonts/remixicon.css';
+import "remixicon/fonts/remixicon.css";
+import { Routes, Route } from "react-router-dom";
+import { Context } from "./context/context";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
-import SkillsHeading from "./sectioms/SkillsHeading";
-import Experience from "./sectioms/expereince/Experience";
-import ContactForm from "./sectioms/contact/Contact";
-import Footer from "./sectioms/footer/Footer";
+const Hero = lazy(() => import("./sectioms/Hero/Hero"));
+const Projects = lazy(() => import("./sectioms/projects/Projects"));
+const About = lazy(() => import("./sectioms/About/About"));
+const Services = lazy(() => import("./sectioms/Services/Services"));
+const Skills = lazy(() => import("./sectioms/Skills/Skills"));
+const SkillsHeading = lazy(() => import("./sectioms/SkillsHeading"));
+const Experience = lazy(() => import("./sectioms/expereince/Experience"));
+const ContactForm = lazy(() => import("./sectioms/contact/Contact"));
+const Footer = lazy(() => import("./sectioms/footer/Footer"));
+const ServiceRoute = lazy(() => import("./routes/ServiceRoute"));
+
+const Loader = () => (
+  <div className="flex justify-center items-center h-screen text-white text-lg">
+    Loading...
+  </div>
+);
+
 const App = () => {
+  const {setisnabarisopen} = useContext(Context)
   return (
-    <div data-scroll-container className=" h-screen  relative ">
-      <img
-        className="absolute object-cover w-[100%] h-[100%] opacity-[.02]"
-        src={gridbg}
-        alt=""
-      />
-      <div className="fixed-section fixed h-screen  top-0 left-0 w-full bg-transparent grid-bg z-5">
-
-      </div>
+    <div data-scroll-container className="h-screen relative">
+         <div
+               className="menu-button cursor-pointer  z-40 ser flex items-center justify-center rounded-full fixed top-3 right-4 sm:right-6"
+               onClick={() => setisnabarisopen(true)}
+             >
+               <HiOutlineMenuAlt4 className="menu-icon text-[7vw] sm:text-[4vw] md:text-[2vw]" />
+             </div>
+      <div className="fixed-section fixed h-screen top-0 left-0 w-full bg-transparent grid-bg z-5"></div>
+s
       <LenisApp>
-        <Hero />
-        <About />
-        <Projects />
-        <Services/>
-        <SkillsHeading/>
-        <Skills/>
-        <Experience/>
-        <ContactForm/>
-        <Footer/>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <About />
+                  <Projects />
+                  <Services />
+                  <SkillsHeading />
+                  <Skills />
+                  <Experience />
+                  <ContactForm />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/services" element={<ServiceRoute />} />
+          </Routes>
+        </Suspense>
       </LenisApp>
     </div>
   );
