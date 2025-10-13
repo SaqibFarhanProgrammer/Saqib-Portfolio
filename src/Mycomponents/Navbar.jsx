@@ -36,7 +36,7 @@ const Navbar = () => {
           max-[531px]:text-[26px] max-[531px]:p-6 max-[531px]:pt-[28vw]
         "
       >
-        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link to="/" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Home
         </Link>
         <Link to="/work" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
@@ -45,10 +45,10 @@ const Navbar = () => {
         <Link to="/Services" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Services
         </Link>
-        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link to="/contact" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Contact
         </Link>
-        <Link className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link to="/about" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           About
         </Link>
       </div>

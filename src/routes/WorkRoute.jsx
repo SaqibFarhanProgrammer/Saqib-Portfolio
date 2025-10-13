@@ -63,7 +63,7 @@ const projects = [
 
 const WorkRoute = () => {
   return (
-    <section className="w-full relative z-[101] min-h-screen bg-black text-white py-24 px-6 md:px-20">
+    <section className="w-full z-10 relative z min-h-screen  text-white py-24 px-6 md:px-20">
       {/* Header */}
       <div className="text-center mb-20">
         <h1 className="text-[10vw] sm:text-[6vw] md:text-[4vw] font-[HB] uppercase tracking-tight">
