@@ -8,7 +8,6 @@ import { Context } from "./context/context";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import WorkRoute from "./routes/WorkRoute";
 import Contact from "./routes/ContactRoute";
-import AboutRoute from "./routes/AboutRoute";
 
 const Hero = lazy(() => import("./sectioms/Hero/Hero"));
 const Projects = lazy(() => import("./sectioms/projects/Projects"));
@@ -61,7 +60,6 @@ const App = () => {
             <Route path="/services" element={<ServiceRoute />} />
             <Route path="/work" element={<WorkRoute />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<AboutRoute />} />
           </Routes>
         </Suspense>
       </LenisApp>

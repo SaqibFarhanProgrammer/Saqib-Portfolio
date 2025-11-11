@@ -4,6 +4,7 @@ import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import re
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
@@ -48,9 +49,7 @@ const Navbar = () => {
         <Link to="/contact" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
           Contact
         </Link>
-        <Link to="/about" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
-          About
-        </Link>
+   
       </div>
 
       <div
@@ -68,6 +67,7 @@ const Navbar = () => {
           <FaGithub className="text-sm" />
           Github
         </button>
+        <a href="../" download={}></a>
         <button className="flex items-center gap-2 hover:text-white transition-colors">
           <HiOutlineDocumentText className="text-sm" />
           Resume

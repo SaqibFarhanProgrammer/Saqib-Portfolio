@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const {
@@ -12,12 +13,11 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
     reset();
   };
 
   return (
-    <section className="relative h-[100%] flex flex-col md:flex-row items-center justify-center bg-black text-white px-6 md:px-20 py-20 overflow-hidden">
+    <section className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center bg-black text-white px-6 md:px-20 py-20 overflow-hidden">
       {/* Glow background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_60%)] z-0"></div>
 
@@ -28,26 +28,28 @@ const Contact = () => {
         </h2>
         <p className="text-zinc-400 font-['main'] mt-5 text-base md:text-lg max-w-md leading-relaxed">
           Have a project in mind, a collaboration idea, or just want to say hi?
-          I’d love to hear from you. Fill out the form or reach me directly below.
+          I’d love to hear from you. Fill out the form or reach me directly
+          below.
         </p>
 
         <div className="mt-10 space-y-3 text-sm sm:text-base">
           <p className="flex items-center gap-3 text-zinc-300">
             <FaEnvelope className="text-white text-lg" />
-            <a href="mailto:youremail@gmail.com" className="hover:text-white transition">
-              youremail@gmail.com
+            <a
+              href="mailto:youremail@gmail.com"
+              className="hover:text-white transition"
+            >
+              saqibkhatai@gmail.com
             </a>
           </p>
           <div className="flex gap-5 pt-4">
-            <a href="#" className="hover:text-pink-400 transition">
-              <FaInstagram size={22} />
-            </a>
-            <a href="#" className="hover:text-sky-400 transition">
+
+            <Link to="https://www.linkedin.com/in/saqib-farhan-214590340" className="hover:text-sky-400 transition">
               <FaLinkedin size={22} />
-            </a>
-            <a href="#" className="hover:text-gray-300 transition">
+            </Link>
+            <Link to="  https://github.com/SaqibFarhanProgrammer" className="hover:text-gray-300 transition">
               <FaGithub size={22} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -86,7 +88,9 @@ const Contact = () => {
 
             {/* Message */}
             <div>
-              <label className="block text-sm text-zinc-400 mb-2">Message</label>
+              <label className="block text-sm text-zinc-400 mb-2">
+                Message
+              </label>
               <textarea
                 {...register("message", { required: true })}
                 rows="4"

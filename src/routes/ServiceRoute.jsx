@@ -14,36 +14,11 @@ const serviceData = [
       "Building fast, responsive, and dynamic websites using React, Next.js, and modern UI frameworks.",
     points: [
       "Responsive, mobile-first interfaces",
-      "Reusable and scalable components",
+      "Reusable components",
       "Optimized for performance and SEO",
     ],
   },
-  {
-    id: 2,
-    title: "UI Design",
-    image:
-      "https://cdn.dribbble.com/userupload/44168173/file/original-1c449ae9eb19fd5dc54e2f218b206c9e.png?resize=1600x1067&vertical=center",
-    description:
-      "Designing user interfaces that are not only beautiful but also functional and brand-aligned.",
-    points: [
-      "Design systems and reusable components",
-      "Pixel-perfect layouts and spacing",
-      "High-fidelity prototypes for client review",
-    ],
-  },
-  {
-    id: 3,
-    title: "UI/UX Strategy",
-    image:
-      "https://cdn.dribbble.com/userupload/44079546/file/original-0376cd638a8e13fa4af002977dc8d3a1.png?resize=1200x957&vertical=center",
-    description:
-      "Combining user research and design thinking to create intuitive, user-centered experiences.",
-    points: [
-      "User journey mapping & wireframes",
-      "Visual hierarchy & interaction design",
-      "Usability testing & iteration",
-    ],
-  },
+
 ];
 
 const ServiceRoute = () => {
