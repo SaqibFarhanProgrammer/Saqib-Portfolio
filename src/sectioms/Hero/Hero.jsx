@@ -72,7 +72,7 @@ const Hero = () => {
         <div className="flex-1 flex gap-4 justify-center items-center">
           <Link to="/contact">
             <button className="hero-button text-[4vw] sm:text-[2vw] md:text-[1vw] font-['main'] rounded-full px-6 py-2 bg-white text-black transition-all duration-300 hover:bg-gray-200">
-              Let Connect
+              Let's Connect
             </button>
           </Link>
           <Link to="https://www.linkedin.com/in/saqib-farhan-214590340">
