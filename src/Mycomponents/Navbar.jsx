@@ -5,6 +5,8 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
 // ,,,
+
+// 
 import resume from "..//assets/source/Resume_Saqib.pdf"
 
 const Navbar = () => {
