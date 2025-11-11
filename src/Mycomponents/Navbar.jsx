@@ -4,7 +4,6 @@ import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import re
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
@@ -67,7 +66,7 @@ const Navbar = () => {
           <FaGithub className="text-sm" />
           Github
         </button>
-        <a href="../" download={}></a>
+        <a href="#" ></a>
         <button className="flex items-center gap-2 hover:text-white transition-colors">
           <HiOutlineDocumentText className="text-sm" />
           Resume

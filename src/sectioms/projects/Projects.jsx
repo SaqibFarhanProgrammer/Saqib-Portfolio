@@ -7,9 +7,9 @@ import { SiFirebase, SiTailwindcss, SiShadcnui } from "react-icons/si";
 
 const projects = [
   {
-    title: "Elixur Jewelry Store",
+    title: "Cora-IDE",
     description:
-      "Luxury jewelry e-commerce built with modern UI and animations.",
+      "Created a web-based code editor in React with Firebase authentication and a modern ShadCN + Tailwind UI.",
     img: image3,
     link: "#",
     github:"https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
