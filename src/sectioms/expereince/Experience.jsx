@@ -11,23 +11,8 @@ const experiences = [
     Users can create, edit, and download their code files directly from the app, 
     making it a simple tool for testing and writing code online.`,
   },
-  {
-    company: "Neura AI",
-    tagline: "AI-powered chat application",
-    techStack: "React, Gemini API, Tailwind CSS",
-    github: "github.com/yourusername/neura-ai",
-    description: `I created an AI chat application using the Gemini API that allows users to chat directly with an AI assistant. 
-    The app focuses on generating optimized and context-aware responses within a clean and responsive interface.`,
-  },
-  {
-    company: "Crypto Dashboard",
-    tagline: "Real-time cryptocurrency tracker",
-    techStack: "React, CoinGecko API, Chart.js",
-    github: "github.com/yourusername/crypto-dashboard",
-    description: `I developed a crypto dashboard that shows real-time cryptocurrency prices, market data, 
-    and includes a built-in currency converter. This project helped me improve my skills 
-    in API integration and building responsive, data-driven interfaces.`,
-  },
+
+
   {
     company: "Quick Notes",
     tagline: "Minimal note-taking app",
@@ -41,7 +26,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="w-full min-h-screen z-20 relative bg-transparent text-white px-4 sm:px-6 lg:px-20 py-12">
+    <section className="w-full m z-20 relative bg-transparent text-white px-4 sm:px-6 lg:px-20 py-12">
       <div className="w-full h-auto flex justify-center items-center">
         <h2 className="text-5xl w-[100%] text-center sm:text-4xl pl-18 md:text-[4vw] font-bold mb-12 sm:text-left max-[531px]:pl-0">
           EXPERIENCE

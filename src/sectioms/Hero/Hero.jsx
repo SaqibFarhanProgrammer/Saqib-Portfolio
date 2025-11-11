@@ -11,10 +11,10 @@ const Hero = () => {
   return (
     <div className="hero-container z-20 relative w-full max-[531px]:h-[100vh] h-screen flex flex-col justify-between overflow-x-hidden bg-transparent">
       {/* ---------- Navbar ---------- */}
-      <div className="top-navbar z-10 flex justify-between items-center px-1 py-3 sm:px-3 sm:pb-2 md:px-3">
+      <div className="top-navbar  pt-3 z-10 flex h-[10vh] justify-between  items-center px-1 sm:px-3 md:px-3">
         <div className="max-[531px]:pl-3">
           <img
-            className="logo-img-1  h-[6vh] w-auto sm:h-[7vh] md:h-[8vh] mix-blend-screen"
+            className="logo-img-1 pr-2    h-[6vh] w-auto sm:h-[7vh] md:h-[8vh] mix-blend-screen"
             src={logo}
             alt="Main Logo"
           />

@@ -28,17 +28,17 @@ const Loader = () => (
 );
 
 const App = () => {
-  const {setisnabarisopen} = useContext(Context)
+  const { setisnabarisopen } = useContext(Context);
   return (
     <div data-scroll-container className="h-screen relative">
-         <div
-               className="menu-button cursor-pointer  z-40 ser flex items-center justify-center rounded-full fixed top-3 right-4 sm:right-6"
-               onClick={() => setisnabarisopen(true)}
-             >
-               <HiOutlineMenuAlt4 className="menu-icon text-[7vw] sm:text-[4vw] md:text-[2vw]" />
-             </div>
+      <div
+        className="menu-button cursor-pointer  z-40 ser flex items-center justify-center rounded-full fixed top-3 right-4 sm:right-6"
+        onClick={() => setisnabarisopen(true)}
+      >
+        <HiOutlineMenuAlt4 className="menu-icon text-[7vw] sm:text-[4vw] md:text-[2vw]" />
+      </div>
       <div className="fixed-section fixed h-screen top-0 left-0 w-full bg-transparent grid-bg z-5"></div>
-s
+      
       <LenisApp>
         <Suspense fallback={<Loader />}>
           <Routes>

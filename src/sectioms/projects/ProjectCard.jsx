@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   title,
@@ -9,7 +10,7 @@ const ProjectCard = ({
   height,
   width,
 }) => {
-  const { react, firebase, tailwind, shadcn } = technologies || {};
+  const { react, firebase, tailwind, shadcn, github } = technologies || {};
 
   return (
     <div
@@ -33,25 +34,27 @@ const ProjectCard = ({
         </div>
 
         <div className="flex flex-col max-[531px]:flex-row max-[531px]:items-center  sm:flex-row items-start sm:items-center justify-between gap-4 mt-6">
-          <button className="bg-white/10 backdrop-blur-md px-4 py-2 max-[531px]:py-1 sm:px-6  rounded-full text-xs sm:text-sm flex items-center gap-2 hover:bg-white/20 transition-all text-white w-fit">
-            <i className="ri-github-fill text-lg sm:text-xl"></i> Github
-          </button>
+          <Link to="https://github.com/SaqibFarhanProgrammer/Cora-IDE">
+            <button className="bg-white/10 backdrop-blur-md px-4 py-2 max-[531px]:py-1 sm:px-6  rounded-full text-xs sm:text-sm flex items-center gap-2 hover:bg-white/20 transition-all text-white w-fit">
+              <i className="ri-github-fill text-lg sm:text-xl"></i> Github
+            </button>
+          </Link>
 
-          <div className="flex items-center gap-2 sm:gap-4 opacity-70 flex-wrap">
+          <div className="flex itemss-center gap-2 sm:gap-4 opacity-70 flex-wrap">
             {react}
             {firebase}
             {tailwind}
             {shadcn}
           </div>
 
-          <a
-            href={link}
+          <Link
+            to={link}
             target="_blank"
             rel="noreferrer"
             className="self-end sm:self-auto"
           >
             <i className="ri-arrow-right-up-line text-3xl sm:text-5xl md:text-6xl text-white opacity-70 group-hover:opacity-100 transition"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

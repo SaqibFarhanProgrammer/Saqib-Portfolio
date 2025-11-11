@@ -12,35 +12,14 @@ export default function Skills() {
       image:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
     },
-    {
-      name: "Node.js",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
-    },
-    {
-      name: "Express.js",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg",
-    },
-    {
-      name: "MongoDB",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg",
-    },
+
     {
       name: "Redux Toolkit",
       image:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
     },
-    {
-      name: "TypeScript",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-    },
-    {
-      name: "Postman",
-      image: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    },
+
+    
     {
       name: "Tailwind CSS",
       image:

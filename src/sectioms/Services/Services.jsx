@@ -26,17 +26,7 @@ const services = [
       "High-fidelity prototypes for handoff",
     ],
   },
-  {
-    id: 3,
-    title: "UI UX Design",
 
-    image: "https://cdn.dribbble.com/userupload/44079546/file/original-0376cd638a8e13fa4af002977dc8d3a1.png?resize=1200x957&vertical=center",
-    points: [
-      "User-centered wireframes and journey mapping",
-      "Visual hierarchy and interaction flow",
-      "Usability testing and refinement",
-    ],
-  },
 ];
 
 const Services = () => {
