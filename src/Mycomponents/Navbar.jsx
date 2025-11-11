@@ -4,6 +4,7 @@ import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import resume from "..//assets/source/Resume_Saqib.pdf"
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
@@ -36,19 +37,37 @@ const Navbar = () => {
           max-[531px]:text-[26px] max-[531px]:p-6 max-[531px]:pt-[28vw]
         "
       >
-        <Link to="/" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link
+          to="/"
+          className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
+        >
           Home
         </Link>
-        <Link to="/work" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link
+          to="/work"
+          className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
+        >
           Work
         </Link>
-        <Link to="/Services" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link
+          to="/Services"
+          className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
+        >
           Services
         </Link>
-        <Link to="/contact" className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]">
+        <Link
+          to="/contact"
+          className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
+        >
           Contact
         </Link>
-   
+        <a
+          href={resume}
+          download="saqib_resume"
+          className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
+        >
+          Resume
+        </a>
       </div>
 
       <div
@@ -58,19 +77,20 @@ const Navbar = () => {
           max-[531px]:text-[13px] max-[531px]:gap-3 max-[531px]:h-[80px]
         "
       >
-        <button className="flex items-center gap-2 hover:text-white transition-colors">
+        <Link
+          to="https://www.linkedin.com/in/saqib-farhan-214590340"
+          className="flex items-center gap-2 hover:text-white transition-colors"
+        >
           <FaLinkedin className="text-sm" />
           Linkedin
-        </button>
-        <button className="flex items-center gap-2 hover:text-white transition-colors">
+        </Link>
+        <Link
+          to="https://github.com/SaqibFarhanProgrammer"
+          className="flex items-center gap-2 hover:text-white transition-colors"
+        >
           <FaGithub className="text-sm" />
           Github
-        </button>
-        <a href="#" ></a>
-        <button className="flex items-center gap-2 hover:text-white transition-colors">
-          <HiOutlineDocumentText className="text-sm" />
-          Resume
-        </button>
+        </Link>
       </div>
     </div>
   );
