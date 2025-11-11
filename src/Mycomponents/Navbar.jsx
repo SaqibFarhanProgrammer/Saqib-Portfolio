@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import openIcon from "../assets/icons/imgi_138_default.png";
 import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { HiOutlineDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
 // ,,,
 
 // 
-import resume from "../..public/Resume_saqib.pdf"
+// 
+import resume from "../../public/Resume_saqib.pdf"
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
