@@ -14,9 +14,9 @@ const projects = [
     link: "https://cora-ide.vercel.app/",
     github: "https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
     technologies: {
-      react: <FaReact className="text-cyan-400 text-2xl sm:text-3xl" />,
+     react: <FaReact className="text-cyan-400 text-2xl sm:text-3xl" />,
       firebase: <SiFirebase className="text-orange-500 text-2xl sm:text-3xl" />,
-      tailwind: <SiTailwindcss className="text-sky-400 text-2xl sm:text-3xl" />,
+      tailwind: <SiTailwindcss className="text-s ky-400 text-2xl sm:text-3xl" />,
       shadcn: <SiShadcnui className="text-purple-400 text-2xl sm:text-3xl" />,
     },
   },

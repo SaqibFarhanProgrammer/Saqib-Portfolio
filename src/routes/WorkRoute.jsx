@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "remixicon/fonts/remixicon.css";
-import cora_ide from "../assets/images/CORA_IDE.jpeg"
+import { SiReact, SiFirebase, SiTailwindcss ,SiShadcnui} from "react-icons/si";
+import { FaCode } from "react-icons/fa";
+import cora_ide from "../assets/images/CORA_IDE.jpeg";
 
 const projects = [
   {
@@ -17,20 +18,19 @@ const projects = [
     ],
     img: cora_ide,
     tech: [
-      "ri-reactjs-line text-cyan-400",
-      "ri-fire-line text-orange-500",
-      "ri-tailwind-css-line text-sky-400",
+      <SiReact className="text-cyan-400 text-3xl" />,
+      <SiFirebase className="text-orange-500 text-3xl" />,
+      <SiTailwindcss className="text-sky-400 text-3xl" />,
+      <SiShadcnui className="text-purple-400 text-2xl sm:text-3xl" />,
     ],
     github: "https://github.com/yourusername/cora-ide",
     preview: "https://cora-ide.vercel.app/",
   },
 ];
 
-
 const WorkRoute = () => {
   return (
-    <section className="w-full z-10 relative z min-h-screen  text-white py-24 px-6 md:px-20">
-      {/* Header */}
+    <section className="w-full z-10 relative min-h-screen text-white py-24 px-6 md:px-20">
       <div className="text-center mb-20">
         <h1 className="text-[10vw] sm:text-[6vw] md:text-[4vw] font-[HB] uppercase tracking-tight">
           Work
@@ -41,7 +41,6 @@ const WorkRoute = () => {
         </p>
       </div>
 
-      {/* Projects */}
       <div className="flex flex-col gap-28">
         {projects.map((project, index) => (
           <div
@@ -50,7 +49,6 @@ const WorkRoute = () => {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* Image */}
             <div className="md:w-1/2 w-full overflow-hidden rounded-3xl relative group shadow-[0_0_25px_rgba(255,255,255,0.05)]">
               <img
                 src={project.img}
@@ -61,7 +59,6 @@ const WorkRoute = () => {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white/5 blur-3xl"></div>
             </div>
 
-            {/* Details */}
             <div className="md:w-1/2 w-full space-y-5">
               <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
                 {project.title}
@@ -77,9 +74,9 @@ const WorkRoute = () => {
                 ))}
               </ul>
 
-              <div className="flex items-center gap-2 pt-3">
+              <div className="flex items-center gap-4 pt-3">
                 {project.tech.map((icon, i) => (
-                  <i key={i} className={`${icon} text-2xl sm:text-3xl`}></i>
+                  <span key={i}>{icon}</span>
                 ))}
               </div>
 
@@ -87,7 +84,7 @@ const WorkRoute = () => {
                 to={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-6 2 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-300 transition-all duration-300"
+                className="inline-block mt-6 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-300 transition-all duration-300"
               >
                 View on GitHub
               </Link>
@@ -95,7 +92,7 @@ const WorkRoute = () => {
                 href={project.preview}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-6 ml-4 m;-2 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-300 transition-all duration-300"
+                className="inline-block mt-6 ml-4 px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-300 transition-all duration-300"
               >
                 View
               </a>
