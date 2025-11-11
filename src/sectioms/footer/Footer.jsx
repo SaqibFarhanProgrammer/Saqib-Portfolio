@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -27,18 +28,16 @@ const Footer = () => {
 
         {/* Center Links */}
         <div className="flex flex-col md:flex-row gap-5 text-sm font-light">
-          <a href="#home" className="hover:text-white transition-colors">Home</a>
-          <a href="#work" className="hover:text-white transition-colors">Work</a>
-          <a href="#services" className="hover:text-white transition-colors">Services</a>
-          <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+          <Link to="#home" className="hover:text-white transition-colors">Home</Link>
+          <Link to="#work" className="hover:text-white transition-colors">Work</Link>
+          <Link to="#services" className="hover:text-white transition-colors">Services</Link>
+          <Link to="#contact" className="hover:text-white transition-colors">Contact</Link>
         </div>
 
         {/* Right Social Icons */}
         <div className="flex gap-5">
-          <a href="#" className="hover:text-white transition-colors"><FaFacebookF size={18} /></a>
-          <a href="#" className="hover:text-white transition-colors"><FaInstagram size={18} /></a>
-          <a href="#" className="hover:text-white transition-colors"><FaLinkedinIn size={18} /></a>
-          <a href="#" className="hover:text-white transition-colors"><FaGithub size={18} /></a>
+          <Link to="https://www.linkedin.com/in/saqib-farhan-214590340" className="hover:text-white transition-colors"><FaLinkedinIn size={18} /></Link>
+          <Link to="https://github.com/SaqibFarhanProgrammer" className="hover:text-white transition-colors"><FaGithub size={18} /></Link>
         </div>
       </div>
 
@@ -51,3 +50,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

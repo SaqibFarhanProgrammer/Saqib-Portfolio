@@ -4,7 +4,7 @@ import "../../App.css";
 import { Context } from "../../context/context";
 import logo from "../../assets/images/Picsart_25-09-27_11-27-17-348.png";
 import { FaLinkedin } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   const { setisnabarisopen } = useContext(Context);
 
@@ -69,10 +69,17 @@ const Hero = () => {
           <h2>Saqib Farhan</h2>
         </div>
 
-        <div className="flex-1 flex justify-center items-center">
-          <button className="hero-button text-[4vw] sm:text-[2vw] md:text-[1vw] font-['main'] rounded-full px-6 py-2 bg-white text-black transition-all duration-300 hover:bg-gray-200">
-            Let Connect
-          </button>
+        <div className="flex-1 flex gap-4 justify-center items-center">
+          <Link to="/contact">
+            <button className="hero-button text-[4vw] sm:text-[2vw] md:text-[1vw] font-['main'] rounded-full px-6 py-2 bg-white text-black transition-all duration-300 hover:bg-gray-200">
+              Let Connect
+            </button>
+          </Link>
+          <Link to="https://www.linkedin.com/in/saqib-farhan-214590340">
+            <button className="hero-button text-[4vw] sm:text-[2vw] md:text-[1vw] font-['main'] rounded-full px-6 py-2 bg-white text-black transition-all duration-300 hover:bg-gray-200">
+              Linkedin
+            </button>
+          </Link>
         </div>
 
         <div className="flex-1 text-white text-[3.5vw] sm:text-[2vw] md:text-[1vw] text-center sm:text-right font-['medium'] flex flex-col gap-2">
@@ -83,57 +90,6 @@ const Hero = () => {
       </div>
 
       {/* ---------- LinkedIn Floating Button ---------- */}
-      <div
-        className="
-      max-[960px]:hidden
-
-    linkedin absolute right-0 top-[480px] 
-    bg-[#111] 
-    h-[60px] w-[240px] 
-    rounded-l-3xl 
-    flex items-center justify-between gap-4 
-    text-white cursor-pointer overflow-hidden
-
-    /* Tablet screens */
-    sm:top-[360px] sm:h-[70px] sm:w-[180px]
-
-    /* Desktop screens */
-    md:top-[320px] md:h-[80px] md:w-[200px]
-  "
-      >
-        <div
-          className="
-      icon bg-zinc-100 
-      h-full w-[70px] 
-      flex justify-center items-center
-      max-[531px]:hidden
-
-      md:w-[50px]
-    "
-        >
-          <FaLinkedin
-            className="
-        linkedin-icon text-[28px] 
-        sm:text-[32px] 
-        md:text-[36px] 
-        text-black
-      "
-          />
-        </div>
-
-        <p
-          className="
-      pr-[16px] 
-      font-['main'] capitalize 
-      text-[22px]
-
-      sm:pr-[20px] sm:text-[20px]
-      md:pr-[24px] md:text-[18px]
-    "
-        >
-          Linkedin
-        </p>
-      </div>
     </div>
   );
 };

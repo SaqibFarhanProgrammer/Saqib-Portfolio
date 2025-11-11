@@ -52,8 +52,8 @@ export default function About() {
         strengthened my expertise in{" "}
         <span className="span font-['italic']">React.js</span> and{" "}
         <span className="span font-['italic']">modern libraries</span>. My focus
-        is on writing <span className="span font-['italic']">clean</span>,{" "}
-        <span className="span font-['italic']">efficient code</span> and
+        is on writing <span className="span font-['italic']">clean</span>{" "}
+        Code and
         delivering designs that balance performance with a seamless{" "}
         <span className="span font-['italic']">user experience.</span>
       </p>

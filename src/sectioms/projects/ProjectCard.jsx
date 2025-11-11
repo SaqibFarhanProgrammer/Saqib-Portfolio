@@ -10,7 +10,7 @@ const ProjectCard = ({
   height,
   width,
 }) => {
-  const { react, firebase, tailwind, shadcn, github } = technologies || {};
+  const { react, firebase, tailwind, shadcn } = technologies || {};
 
   return (
     <div
