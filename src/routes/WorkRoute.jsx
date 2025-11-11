@@ -6,14 +6,14 @@ import cora_ide from "../assets/images/CORA_IDE.jpeg"
 const projects = [
   {
     title: "Cora IDE",
-    subtitle: "Web-based Code Editor",
+    subtitle: "Web Code Editor with Firebase Auth",
     description:
-      "A powerful in-browser IDE that supports live HTML, CSS, and JavaScript previewing. Includes Google Auth, file system integration, and autosave to enhance developer workflow.",
+      "A web-based code editor where you can create, edit, delete, and download HTML, CSS, and JavaScript files. Features live code preview and user profiles.",
     features: [
-      "Live code rendering",
-      "Integrated Google Authentication",
-      "Cloud-based file system",
-      "Dark & light theme support",
+      "Firebase authentication",
+      "Create, edit, delete, and download JS/HTML/CSS files",
+      "Live code preview (HTML, CSS, JS)",
+      "User profile system",
     ],
     img: cora_ide,
     tech: [
@@ -24,8 +24,8 @@ const projects = [
     github: "https://github.com/yourusername/cora-ide",
     preview: "https://cora-ide.vercel.app/",
   },
-
 ];
+
 
 const WorkRoute = () => {
   return (
