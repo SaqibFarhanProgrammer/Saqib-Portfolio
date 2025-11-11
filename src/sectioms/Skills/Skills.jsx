@@ -7,19 +7,7 @@ export default function Skills() {
       image:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
     },
-    {
-      name: "Next.js",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
-    },
 
-    {
-      name: "Redux Toolkit",
-      image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-    },
-
-    
     {
       name: "Tailwind CSS",
       image:

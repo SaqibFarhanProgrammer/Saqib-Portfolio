@@ -11,8 +11,8 @@ const projects = [
     description:
       "Created a web-based code editor in React with Firebase authentication and a modern ShadCN + Tailwind UI.",
     img: image3,
-    link: "#",
-    github:"https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
+    link: "https://cora-ide.vercel.app/",
+    github: "https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
     technologies: {
       react: <FaReact className="text-cyan-400 text-2xl sm:text-3xl" />,
       firebase: <SiFirebase className="text-orange-500 text-2xl sm:text-3xl" />,
@@ -31,32 +31,33 @@ const Projects = () => {
         </h2>
       </div>
 
-      <div className="w-[100%] h-auto flex overflow-x-hidden flex-col  items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
-        {projects.map((p) => {
-          return (
-            <ProjectCard
-              title={p.title}
-              description={p.description}
-              img={image3}
-
-              github={p.github}
-              link="https://cora-ide.vercel.app/"
-              technologies={{
-                react: (
-                  <FaReact className="text-cyan-400 text-lg sm:text-xl md:text-3xl" />
-                ),
-                firebase: (
-                  <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />
-                ),
-                tailwind: (
-                  <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />
-                ),
-              }}
-              height="80vh"
-              width="85vw"
-            />
-          );
-        })}
+      <div className="w-[100%] h-auto flex overflow-x-hidden flex-col items-center md:items-end justify-center p-3 sm:p-2 gap-6 md:gap-4">
+        {projects.map((p) => (
+          <ProjectCard
+            key={p.title}
+            title={p.title}
+            description={p.description}
+            img={p.img}
+            github={p.github}
+            link={p.link}
+            technologies={{
+              react: (
+                <FaReact className="text-cyan-400 text-lg sm:text-xl md:text-3xl" />
+              ),
+              firebase: (
+                <SiFirebase className="text-orange-500 text-lg sm:text-xl md:text-3xl" />
+              ),
+              tailwind: (
+                <SiTailwindcss className="text-sky-400 text-lg sm:text-xl md:text-3xl" />
+              ),
+              shadcn: (
+                <SiShadcnui className="text-purple-400 text-lg sm:text-xl md:text-3xl" />
+              ),
+            }}
+            height="80vh"
+            width="85vw"
+          />
+        ))}
       </div>
     </div>
   );
