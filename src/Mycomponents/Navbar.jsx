@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 // ,,,
 
 // 
-import resume from "..//assets/source/Resume_Saqib.pdf"
+import resume from "../..public/Resume_saqib.pdf"
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
