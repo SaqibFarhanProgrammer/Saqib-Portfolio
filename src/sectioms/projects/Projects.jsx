@@ -1,28 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-import image3 from "../../assets/images/CORA_IDE.jpeg";
+import Cora_ide_desktop from "../../assets/images/CORA_IDE.jpeg";
+import Cora_ide_Mobile from "../../assets/images/Cora_ide_mobile.jpeg";
 import { FaReact } from "react-icons/fa";
 import { SiFirebase, SiTailwindcss, SiShadcnui } from "react-icons/si";
 
-const projects = [
-  {
-    title: "Cora-IDE",
-    description:
-      "Created a web-based code editor in React with Firebase authentication and a modern ShadCN + Tailwind UI.",
-    img: image3,
-    link: "https://cora-ide.vercel.app/",
-    github: "https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
-    technologies: {
-     react: <FaReact className="text-cyan-400 text-2xl sm:text-3xl" />,
-      firebase: <SiFirebase className="text-orange-500 text-2xl sm:text-3xl" />,
-      tailwind: <SiTailwindcss className="text-s ky-400 text-2xl sm:text-3xl" />,
-      shadcn: <SiShadcnui className="text-purple-400 text-2xl sm:text-3xl" />,
-    },
-  },
-];
-
 const Projects = () => {
+  const [picture, setpicture] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 764) setpicture(true);
+    else setpicture(false);
+  }, [window.innerWidth]);
+
+  const projects = [
+    {
+      title: "Cora-IDE",
+      description:
+        "Created a web-based code editor in React with Firebase authentication and a modern ShadCN + Tailwind UI.",
+      img: picture ? Cora_ide_Mobile : Cora_ide_desktop,
+      link: "https://cora-ide.vercel.app/",
+      github: "https://github.com/SaqibFarhanProgrammer/Cora-IDE.git",
+      technologies: {
+        react: <FaReact className="text-cyan-400 text-2xl sm:text-3xl" />,
+        firebase: (
+          <SiFirebase className="text-orange-500 text-2xl sm:text-3xl" />
+        ),
+        tailwind: (
+          <SiTailwindcss className="text-s ky-400 text-2xl sm:text-3xl" />
+        ),
+        shadcn: <SiShadcnui className="text-purple-400 text-2xl sm:text-3xl" />,
+      },
+    },
+  ];
+
   return (
     <div className="z-10 relative text-white font-sans py-1">
       <div className="container mx-auto mb-12">
