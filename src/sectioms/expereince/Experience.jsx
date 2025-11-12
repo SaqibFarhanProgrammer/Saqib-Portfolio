@@ -17,7 +17,7 @@ const experiences = [
     company: "Quick Notes",
     tagline: "Minimal note-taking app",
     techStack: "React, LocalStorage API, Tailwind CSS",
-    github: "github.com/yourusername/quick-notes",
+    github: "https://github.com/SaqibFarhanProgrammer/Notes_App.git",
     description: `I designed and built a simple note-taking application with a minimal UI, 
     featuring light and dark themes and local storage integration. 
     It provides a fast, distraction-free experience for managing notes.`,
