@@ -9,7 +9,8 @@ const services = [
     id: 1,
     title: "Frontend Development",
     // Yeh Pinterest image URL hai (placeholder) — tu apna correct URL yahan daal
-    image: "https://cdn.dribbble.com/userupload/13628136/file/original-1749e1fb283c1f4a540c60694d2c5f99.png?resize=1600x1200&vertical=center",
+    image:
+      "https://cdn.dribbble.com/userupload/13628136/file/original-1749e1fb283c1f4a540c60694d2c5f99.png?resize=1600x1200&vertical=center",
     points: [
       "Responsive, mobile-first interfaces",
       "Component-driven architecture (React)",
@@ -19,14 +20,14 @@ const services = [
   {
     id: 2,
     title: "UI Design",
-    image: "https://cdn.dribbble.com/userupload/44168173/file/original-1c449ae9eb19fd5dc54e2f218b206c9e.png?resize=1600x1067&vertical=center",
+    image:
+      "https://cdn.dribbble.com/userupload/44168173/file/original-1c449ae9eb19fd5dc54e2f218b206c9e.png?resize=1600x1067&vertical=center",
     points: [
       "Design systems and reusable components",
       "Pixel-perfect layouts and spacing",
       "High-fidelity prototypes for handoff",
     ],
   },
-
 ];
 
 const Services = () => {
@@ -46,8 +47,8 @@ const Services = () => {
         {/* Left Side Text */}
         <p className="md:w-[45%] w-full text-center md:text-left text-sm sm:text-base leading-relaxed text-gray-300">
           I focus on creating meaningful digital experiences that combine clean
-          design, smooth performance, and accessibility — helping brands stand
-          out through functional, modern web interfaces.
+          design, smooth performance, and accessibility helping brands stand out
+          through functional, modern web interfaces.
         </p>
 
         {/* Right Accordion Section */}

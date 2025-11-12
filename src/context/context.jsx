@@ -4,13 +4,9 @@ export const Context = createContext();
 
 export const Provider = ({ children }) => {
   const [isnabarisopen, setisnabarisopen] = useState(false);
-const value = {
-  isnabarisopen,
-  setisnabarisopen
-}
-  return (
-    <Context.Provider value={value}>
-      {children}
-    </Context.Provider>
-  );
+  const value = {
+    isnabarisopen,
+    setisnabarisopen,
+  };
+  return <Context.Provider value={value}>{children}</Context.Provider>;
 };

@@ -1,19 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import openIcon from "../assets/icons/imgi_138_default.png";
 import { Context } from "../context/context";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // ,,,
-// 
-// 
-// 
-import resume from "../../public/Resume_saqib.pdf"
+//
+//
+//
+import resume from "../../public/Resume_saqib.pdf";
 
 const Navbar = () => {
   const { isnabarisopen, setisnabarisopen } = useContext(Context);
-
+  const navbarred = useRef(null)
+  
   return (
     <div
+    ref={navbarred}
+
       className={`
         fixed z-50 rounded-[20px] top-0 backdrop-blur-2xl h-[100%] w-[30%] transition-all duration-500
         ${isnabarisopen ? "right-0" : "-right-full"}
@@ -41,30 +44,35 @@ const Navbar = () => {
         "
       >
         <Link
+          onClick={() => setisnabarisopen(false)}
           to="/"
           className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
         >
           Home
         </Link>
         <Link
+          onClick={() => setisnabarisopen(false)}
           to="/work"
           className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
         >
           Work
         </Link>
         <Link
+          onClick={() => setisnabarisopen(false)}
           to="/Services"
           className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
         >
-          Services
+          Services  
         </Link>
         <Link
+          onClick={() => setisnabarisopen(false)}
           to="/contact"
           className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
         >
           Contact
         </Link>
         <a
+          onClick={() => setisnabarisopen(false)}
           href={resume}
           download="saqib_resume"
           className="navbar-links leading-[4vw] max-[531px]:leading-[10vw] max-[531px]:text-[10vw] max-[1024px]:leading-[6vw]"
